@@ -12,6 +12,9 @@
 		<link rel="icon" href="images/favicon/favicon-16x16.png">
 		<link rel="stylesheet" href="libs/bootstrap/bootstrap-reboot.min.css">
 		<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.min.css">
+		<link rel="stylesheet" href="libs/css-hamburgers/hamburgers.min.css">
+		<link rel="stylesheet" href="libs/owl-carousel/owl.carousel.min.css">
+		<link rel="stylesheet" href="libs/owl-carousel/owl.theme.default.min.css">
 		<link rel="stylesheet" href="libs/fontawesome/css/all.min.css">
 		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="css/media.css">
@@ -20,12 +23,100 @@
 	</head>
 
 	<body>
-		<!-- Section: Name -->
-			<h1>Tajam HTML-Template</h1>
-		<!-- End Section: Name -->
+		<!-- Section: Header -->
+			<header class="header" id="header">
+				<div class="container">
+					<div class="row  no-gutters  justify-content-between  align-items-center">
+						<!-- header logo -->
+						<div class="header-logo">
+							<img src="images/header/header-logo.png" alt="site-logo">
+							<span>tajam</span>
+						</div>
+
+						<!-- desktop navigation -->
+						<nav class="desktop-nav" id="desktop_nav">
+							<a href="#" data-scroll="#intro">home</a>
+							<a href="#" data-scroll="#">about</a>
+							<a href="#" data-scroll="#">expertise</a>
+							<a href="#" data-scroll="#">teams</a>
+							<a href="#" data-scroll="#">works</a>
+							<a href="#" data-scroll="#">people say</a>
+							<a href="#" data-scroll="#">contact</a>
+						</nav>
+
+						<!-- hamburger -->
+						<button class="hamburger  hamburger--elastic" id="hamburger" type="button">
+						  <span class="hamburger-box">
+						    <span class="hamburger-inner"></span>
+						  </span>
+						</button>
+					</div> <!-- /.row -->
+				</div> <!-- /.container -->
+
+				<!-- mobile navigation -->
+				<nav class="mobile-nav" id="mobile_nav">
+					<div class="mobile-nav-inner">
+						<a href="#" data-scroll="#intro">home</a>
+						<a href="#" data-scroll="#">about</a>
+						<a href="#" data-scroll="#">expertise</a>
+						<a href="#" data-scroll="#">teams</a>
+						<a href="#" data-scroll="#">works</a>
+						<a href="#" data-scroll="#">people say</a>
+						<a href="#" data-scroll="#">contact</a>
+					</div>
+				</nav>
+			</header>
+		<!-- End Section: Header -->
+
+		<!-- Section: Intro -->
+			<div class="intro" id="intro">
+				<!-- video background -->
+				<div class="video-bg">
+					<video class="video" autoplay muted loop>
+						<source src="videos/v_intro-bg.mp4" type="video/mp4">
+					</video>
+				</div>
+
+				<!-- intro carousel -->
+				<div class="owl-carousel  owl-theme  intro-carousel">
+					<div class="intro-slide">
+						<h1 class="intro-title">we are awesome creative agency</h1>
+
+						<p class="intro-text">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
+
+						<a class="btn" href="#">learn more</a>
+					</div>
+
+					<div class="intro-slide">
+						<h2 class="intro-title">we always keep our promises</h2>
+
+						<p class="intro-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus similique vero quidem! Iure consectetur mollitia ipsa minima iste quia magnam, aliquam aut minus voluptas id voluptatibus sequi eligendi accusantium labore odit debitis reprehenderit fugiat. Perspiciatis mollitia ipsa.</p>
+
+						<a class="btn" href="#">learn more</a>
+					</div>
+
+					<div class="intro-slide">
+						<h2 class="intro-title">we work every day for you</h2>
+
+						<p class="intro-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam similique ad velit reprehenderit placeat maiores reiciendis, deserunt molestias quis, cum saepe, fugiat unde odit aliquid, ut! Quia, eius, odio? Nihil, autem ullam modi quod veritatis? Celit reprehenderit placeat sit amet.</p>
+
+						<a class="btn" href="#">learn more</a>
+					</div>
+
+					<div class="intro-slide">
+						<h2 class="intro-title">we listen to our customers</h2>
+
+						<p class="intro-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum suscipit vero neque quia est facere modi tempore aliquam recusandae, at totam culpa dolore quaerat iure eaque pariatur, laudantium dolor nostrum in labore vitae obcaecati odit! Lorem ipsum dolor sit amet, consectetur.</p>
+
+						<a class="btn" href="#">learn more</a>
+					</div>
+				</div> <!-- /.owl-carousel -->
+			</div>
+		<!-- End Section: Intro -->
 
 		<!-- JS Locals -->
 			<script src="libs/jquery/jquery-3.4.1.min.js"></script>
+			<script src="libs/owl-carousel/owl.carousel.min.js"></script>
 			<script src="js/common.js"></script>
 	</body>
 

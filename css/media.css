@@ -4,8 +4,13 @@ Responsive Media Queries
 
 @media (max-width: 991px) {
 
-	/*——————— Section: Name ———————*/
-	
+	/*——————— Section: Header ———————*/
+	.desktop-nav {
+		display: none;
+	}
+	.hamburger {
+		display: block;
+	}
 
 }
 
@@ -18,8 +23,13 @@ Responsive Media Queries
 
 @media (max-width: 575px) {
 
-	/*——————— Section: Name ———————*/
-	
+	/*——————— Section: Intro ———————*/
+	.intro {
+		padding-top: 148px;
+	}
+	.intro-slide .btn {
+		margin-bottom: 62px;
+	}
 
 }
 

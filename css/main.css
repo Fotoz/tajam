@@ -23,8 +23,7 @@ body {
 	padding: 0;
 }
 body {
-	font: 300 14px 'Roboto', sans-serif;
-	line-height: 1.5;
+	font: 300 14px / 1.5 'Roboto', sans-serif;
 	color: #413d4b;
 
 	min-width: 320px;
@@ -61,21 +60,208 @@ a:hover {
 	max-width: 100%;
 	height: auto;
 }
+.btn {
+	font: 16px 'Hammersmith One', sans-serif;
+	text-transform: uppercase;
+	color: #00e0d0;
 
-/***** ——————————————————————————————————————————————————————————————————————
-Section: 
-—————————————————————————————————————————————————————————————————————— *****/
+	display: inline-block;
+	padding: 9px 14px;
 
-h1 {
-	font-family: 'Hammersmith One', sans-serif;
-	text-align: center;
+	border: 1px solid #00e0d0;
+	border-radius: 2px;
+	background: none;
+	transition: all .15s linear;
+}
+.btn:hover {
+	color: #00e0d0;
+	box-shadow: 0 0 15px #00e0d0;
 }
 
 /***** ——————————————————————————————————————————————————————————————————————
-Section: 
+Section: Header
 —————————————————————————————————————————————————————————————————————— *****/
 
+.header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	width: 100%;
+	padding: 15px 0;
+	transition: background 1s linear;
+}
+.header.fixed {
+	position: fixed;
+	background: linear-gradient(0, rgb(47, 42, 79), rgb(80, 63, 118));
+}
 
+/*——————— header-logo ———————*/
+.header-logo span {
+	font-size: 30px;
+	font-weight: 100;
+	color: #18bfc1;
+
+	vertical-align: middle;
+	margin-left: 9px;
+}
+
+/*——————— desktop-nav ———————*/
+.desktop-nav a,
+.mobile-nav a {
+	font-size: 13px;
+	font-weight: 900;
+	color: #fff;
+	text-transform: uppercase;
+
+	transition: color .15s linear;
+}
+.desktop-nav a:hover,
+.desktop-nav a.is-active,
+.mobile-nav a.is-active {
+	color: #00e0d0;
+}
+.desktop-nav a:not(:last-child) {
+	margin-right: 23px;
+}
+
+/*——————— mobile-nav ———————*/
+.mobile-nav {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -10;
+	width: 100%;
+	height: 100vh;
+	min-height: 568px;
+
+	background: linear-gradient(0, rgb(47, 42, 79), rgb(80, 63, 118));
+}
+.mobile-nav-inner {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	height: 100%;
+}
+.mobile-nav a {
+	font-size: 17px;
+}
+.mobile-nav a:not(:last-child) {
+	margin-bottom: 25px;
+}
+
+/*——————— hamburger ———————*/
+.hamburger {
+	display: none;
+	padding: 0;
+	height: 24px;
+}
+.hamburger:hover,
+.hamburger.is-active:hover {
+	opacity: 1;
+}
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+	background-color: #18bfc1;
+}
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+	background-color: #18bfc1;
+}
+
+/***** ——————————————————————————————————————————————————————————————————————
+Section: Intro
+—————————————————————————————————————————————————————————————————————— *****/
+
+.intro {
+	padding: 218px 0 60px;
+	position: relative;
+	overflow: hidden;
+}
+
+/*——————— video-bg ———————*/
+.video-bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.video-bg::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+	background: linear-gradient(0, rgba(47, 42, 79, .7), rgba(80, 63, 118, .7));
+}
+.video {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+/*——————— intro-carousel ———————*/
+.intro-carousel {
+	color: #fff;
+	text-align: center;
+}
+.intro-slide {
+	width: 100%;
+	max-width: 780px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+.intro-title {
+	font: 900 32px 'Playfair Display', serif;
+	text-transform: capitalize;
+
+	position: relative;
+	margin-bottom: 45px;
+}
+.intro-title::after {
+	content: '';
+	position: absolute;
+	bottom: -20px;
+	left: calc(50% - 25px);
+	z-index: 10;
+	width: 50px;
+	height: 1px;
+
+	background-color: #00e0d0;
+}
+.intro-text {
+	line-height: 1.8;
+	letter-spacing: .5px;
+
+	margin-bottom: 42px;
+}
+.intro-slide .btn {
+	margin-bottom: 112px;
+}
+
+/*——————— owl-dots ———————*/
+.owl-theme .owl-dots .owl-dot span {
+	margin-left: 3px;
+	margin-right: 3px;
+	background: none;
+	border: 1px solid #bab9bc;
+	transition: background .1s linear;
+}
+.owl-theme .owl-dots .owl-dot:hover span {
+	background-color: #bab9bc;
+}
+.owl-theme .owl-dots .owl-dot.active span {
+	background-color: #00e0d0;
+	border-color: #00e0d0;
+}
 
 /***** ——————————————————————————————————————————————————————————————————————
 Section: 
