@@ -77,6 +77,15 @@ a:hover {
 	color: #00e0d0;
 	box-shadow: 0 0 15px #00e0d0;
 }
+.s-padding {
+	padding: 63px 0 70px;
+}
+.s-title {
+	font: 700 22px 'Playfair Display', serif;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #413d4b;
+}
 
 /***** ——————————————————————————————————————————————————————————————————————
 Section: Header
@@ -182,6 +191,8 @@ Section: Intro
 	padding: 218px 0 60px;
 	position: relative;
 	overflow: hidden;
+
+	background: linear-gradient(0, rgb(47, 42, 79), rgb(80, 63, 118));
 }
 
 /*——————— video-bg ———————*/
@@ -264,10 +275,18 @@ Section: Intro
 }
 
 /***** ——————————————————————————————————————————————————————————————————————
-Section: 
+Section: About
 —————————————————————————————————————————————————————————————————————— *****/
 
+.s-about p {
+	letter-spacing: .4px;
+	color: rgba(65, 61, 75, .75);
 
+	margin: 18px 0 24px;
+}
+.s-about .btn {
+	margin-top: 7px;
+}
 
 /***** ——————————————————————————————————————————————————————————————————————
 Section: 
