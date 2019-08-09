@@ -25,7 +25,7 @@ $(function() {
 	checkScroll(scrollPos, introH);
 
 	$(window).on('scroll load resize', function() {
-		introH = $('#intro').innerHeight() - 80;
+		introH = $('#intro').innerHeight() - 81;
 		scrollPos = $(this).scrollTop();
 
 		checkScroll(scrollPos, introH);
@@ -63,5 +63,22 @@ $(function() {
 		items: 1,
 		smartSpeed: 700
 	});
+
+
+// iframe for section: v-Story
+	$('#iframe_poster').on('click', function() {
+	  var poster = $(this),
+	  		wrapper = poster.closest('#v_story');
+
+	  videoPlay(wrapper);
+	});
+
+	function videoPlay(wrapper) {
+	  var iframe = wrapper.find('#iframe'),
+	  		src = iframe.data('src');
+
+	  wrapper.addClass('hide-poster');
+	  iframe.attr('src', src);
+	};
 
 });

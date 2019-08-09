@@ -190,7 +190,6 @@ Section: Intro
 .intro {
 	padding: 218px 0 60px;
 	position: relative;
-	overflow: hidden;
 
 	background: linear-gradient(0, rgb(47, 42, 79), rgb(80, 63, 118));
 }
@@ -286,6 +285,84 @@ Section: About
 }
 .s-about .btn {
 	margin-top: 7px;
+}
+
+/***** ——————————————————————————————————————————————————————————————————————
+Section: v-Story
+—————————————————————————————————————————————————————————————————————— *****/
+
+.v-story {
+	height: 550px;
+	position: relative;
+
+	background-color: #000;
+}
+.iframe {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.iframe-poster {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+
+	font-size: 16px;
+	font-weight: 900;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #fff;
+
+	background: url(../images/v-story/iframe-poster--1920.jpg) no-repeat center / cover;
+	transition: opacity .8s linear, height 0s .8s, color .2s linear;
+}
+.iframe-poster::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -10;
+	width: 100%;
+	height: 100%;
+
+	background: linear-gradient(0, rgba(47, 42, 79, .7), rgba(80, 63, 118, .7));
+}
+.iframe-poster:hover {
+	color: #00e0d0;
+	cursor: pointer;
+}
+.v-story.hide-poster .iframe-poster {
+	opacity: 0;
+	height: 0;
+	color: #00e0d0;
+}
+.iframe-btn {
+	width: 100px;
+	height: 100px;
+	margin-bottom: 30px;
+	padding: 0;
+	padding-left: 7px;
+
+	font-size: 40px;
+	color: #fff;
+
+	border: 3px solid #fff;
+	border-radius: 50%;
+	background: none;
+	transition: all .2s linear;
+}
+.iframe-poster:hover .iframe-btn,
+.v-story.hide-poster .iframe-btn {
+	color: #00e0d0;
+	border-color: #00e0d0;
 }
 
 /***** ——————————————————————————————————————————————————————————————————————

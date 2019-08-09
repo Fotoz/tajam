@@ -16,8 +16,13 @@ Responsive Media Queries
 
 @media (max-width: 767px) {
 
-	/*——————— Section: Name ———————*/
-	
+	/*——————— Section: v-Story ———————*/
+	.v-story {
+		height: 480px;
+	}
+	.iframe-poster {
+		background-image: url(../images/v-story/iframe-poster--800.jpg);
+	}
 
 }
 
@@ -29,6 +34,11 @@ Responsive Media Queries
 	}
 	.intro-slide .btn {
 		margin-bottom: 62px;
+	}
+
+	/*——————— Section: v-Story ———————*/
+	.v-story {
+		height: 380px;
 	}
 
 }
