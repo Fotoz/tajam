@@ -86,6 +86,24 @@ a:hover {
 	letter-spacing: 1px;
 	color: #413d4b;
 }
+.s-subtitle {
+	font: 400 14px 'Playfair Display', serif;
+	letter-spacing: 1px;
+	color: rgba(47, 45, 53, .75);
+
+	/*margin-bottom: 70px;*/
+	position: relative;
+}
+.s-subtitle::after {
+	content: '';
+	position: absolute;
+	bottom: -20px;
+	left: calc(50% - 25px);
+	width: 50px;
+	height: 2px;
+
+	background-color: #c6c4c9;
+}
 
 /***** ——————————————————————————————————————————————————————————————————————
 Section: Header
@@ -241,7 +259,6 @@ Section: Intro
 	position: absolute;
 	bottom: -20px;
 	left: calc(50% - 25px);
-	z-index: 10;
 	width: 50px;
 	height: 1px;
 
@@ -366,6 +383,54 @@ Section: v-Story
 }
 
 /***** ——————————————————————————————————————————————————————————————————————
+Section: Expertise
+—————————————————————————————————————————————————————————————————————— *****/
+
+.s-expertise {
+	text-align: center;
+}
+.s-expertise.s-padding {
+	padding-bottom: 60px;
+}
+.s-expertise .s-subtitle {
+	margin-bottom: 60px;
+}
+
+/*——————— expertise-item ———————*/
+.expertise-item {
+	padding: 40px 30px 24px;
+}
+.expertise-item i {
+	font-size: 45px;
+	color: #00e0d0;
+
+	margin-bottom: 32px;
+}
+.expertise-item h3 {
+	font-size: 14px;
+	font-weight: 900;
+	text-transform: uppercase;
+	letter-spacing: .6px;
+
+	margin-bottom: 16px;
+}
+.expertise-item p {
+	letter-spacing: .7px;
+	color: rgba(51, 51, 51, .75);
+}
+.expertise-item:nth-child(1),
+.expertise-item:nth-child(2),
+.expertise-item:nth-child(3) {
+	border-bottom: 1px solid #ebebeb;
+}
+.expertise-item:nth-child(1),
+.expertise-item:nth-child(2),
+.expertise-item:nth-child(4),
+.expertise-item:nth-child(5) {
+	border-right: 1px solid #ebebeb;
+}
+
+/***** ——————————————————————————————————————————————————————————————————————
 Section: 
 —————————————————————————————————————————————————————————————————————— *****/
 
@@ -374,7 +439,6 @@ Section:
 /***** ——————————————————————————————————————————————————————————————————————
 Section: 
 —————————————————————————————————————————————————————————————————————— *****/
-
 
 
 
