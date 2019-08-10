@@ -12,7 +12,7 @@ $(function() {
 		$(this).addClass('is-active');
 
 		$('html, body').animate({
-			scrollTop: sectionOffset - 80
+			scrollTop: sectionOffset - 79
 		}, 700);
 	});
 
@@ -25,7 +25,7 @@ $(function() {
 	checkScroll(scrollPos, introH);
 
 	$(window).on('scroll load resize', function() {
-		introH = $('#intro').innerHeight() - 81;
+		introH = $('#intro').innerHeight() - 80;
 		scrollPos = $(this).scrollTop();
 
 		checkScroll(scrollPos, introH);

@@ -54,6 +54,31 @@ a:hover {
 	color: transparent;
 }
 
+/*——————— video-bg ———————*/
+.video-bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.video-bg::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+	background: linear-gradient(0, rgba(47, 42, 79, .7), rgba(80, 63, 118, .7));
+}
+.video {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
 /*——————— Extra Classes ———————*/
 .img-fluid {
 	display: block;
@@ -85,13 +110,15 @@ a:hover {
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	color: #413d4b;
+
+	position: relative;
 }
 .s-subtitle {
 	font: 400 14px 'Playfair Display', serif;
 	letter-spacing: 1px;
-	color: rgba(47, 45, 53, .75);
+	color: #f9f9f9;
 
-	/*margin-bottom: 70px;*/
+	margin-bottom: 63px;
 	position: relative;
 }
 .s-subtitle::after {
@@ -210,30 +237,6 @@ Section: Intro
 	position: relative;
 
 	background: linear-gradient(0, rgb(47, 42, 79), rgb(80, 63, 118));
-}
-
-/*——————— video-bg ———————*/
-.video-bg {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-.video-bg::after {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-
-	background: linear-gradient(0, rgba(47, 42, 79, .7), rgba(80, 63, 118, .7));
-}
-.video {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
 }
 
 /*——————— intro-carousel ———————*/
@@ -393,6 +396,7 @@ Section: Expertise
 	padding-bottom: 60px;
 }
 .s-expertise .s-subtitle {
+	color: rgba(47, 45, 53, .75);
 	margin-bottom: 60px;
 }
 
@@ -431,6 +435,57 @@ Section: Expertise
 }
 
 /***** ——————————————————————————————————————————————————————————————————————
+Section: Team
+—————————————————————————————————————————————————————————————————————— *****/
+.s-team {
+	text-align: center;
+	position: relative;
+
+	background: linear-gradient(0, rgb(47, 42, 79), rgb(80, 63, 118));
+}
+.s-team .s-title {
+	color: #fff;
+}
+.s-team .s-subtitle::after {
+	background-color: rgba(249 ,249 ,249 , .2);
+}
+
+/*——————— team-item--info ———————*/
+.teammate-info {
+	padding: 18px 0;
+	border: 1px solid rgba(250, 250, 250, .5);
+}
+.teammate-info h3 {
+	font-size: 14px;
+	font-weight: 900;
+	text-transform: uppercase;
+	letter-spacing: .6px;
+	color: #fff;
+
+	margin-bottom: 2px;
+}
+.teammate-info p {
+	font-size: 13px;
+	text-transform: uppercase;
+	color: rgba(250, 250, 250, .7);
+
+	margin-bottom: 0;
+}
+
+/*——————— team-text ———————*/
+.team-text {
+	letter-spacing: .7px;
+	color: #f3f3f3;
+
+	margin-top: 66px;
+	margin-bottom: 23px;
+}
+.team-text,
+.s-team .btn {
+	position: relative;
+}
+
+/***** ——————————————————————————————————————————————————————————————————————
 Section: 
 —————————————————————————————————————————————————————————————————————— *****/
 
@@ -439,7 +494,6 @@ Section:
 /***** ——————————————————————————————————————————————————————————————————————
 Section: 
 —————————————————————————————————————————————————————————————————————— *****/
-
 
 
 /*———————  ———————*/

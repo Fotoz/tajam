@@ -12,7 +12,7 @@ Responsive Media Queries
 		display: block;
 	}
 
-	/*——————— expertise-item ———————*/
+	/*——————— Section: Expertise ———————*/
 	.expertise-item {
 		max-width: 320px;
 	}
@@ -32,6 +32,15 @@ Responsive Media Queries
 		border-right: none;
 	}
 
+	/*——————— Section: Team ———————*/
+	.team-items {
+		max-width: 480px;
+		margin: 0 auto;
+	}
+	.team-item:first-child {
+		margin-bottom: 50px;
+	}
+
 }
 
 @media (max-width: 767px) {
@@ -44,7 +53,7 @@ Responsive Media Queries
 		background-image: url(../images/v-story/iframe-poster--800.jpg);
 	}
 
-	/*——————— expertise-item ———————*/
+	/*——————— Section: Expertise ———————*/
 	.expertise-item:nth-child(5) {
 		border-bottom: 1px solid #ebebeb;
 	}
@@ -57,6 +66,11 @@ Responsive Media Queries
 }
 
 @media (max-width: 575px) {
+
+	/*——————— Extra Classes ———————*/
+	.s-title {
+		letter-spacing: .3px;
+	}
 
 	/*——————— Section: Intro ———————*/
 	.intro {
@@ -71,12 +85,23 @@ Responsive Media Queries
 		height: 380px;
 	}
 
-	/*——————— expertise-item ———————*/
+	/*——————— Section: Expertise ———————*/
 	.s-expertise .s-subtitle {
 		margin-bottom: 40px;
 	}
 	.s-expertise.s-padding {
 		padding-bottom: 25px;
+	}
+
+	/*——————— Section: Team ———————*/
+	.team-items {
+		max-width: 240px;
+	}
+	.team-item:not(:last-child) {
+		margin-bottom: 50px;
+	}
+	.team-text {
+		letter-spacing: .5px;
 	}
 
 }
