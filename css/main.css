@@ -486,6 +486,67 @@ Section: Team
 }
 
 /***** ——————————————————————————————————————————————————————————————————————
+Section: Works
+—————————————————————————————————————————————————————————————————————— *****/
+
+.s-works {
+	text-align: center;
+}
+.s-works .s-title {
+	margin-bottom: 0;
+}
+.s-works .btn {
+	padding: 9px 26px;
+}
+
+/*——————— s-works-link ———————*/
+.s-works-link {
+	letter-spacing: .7px;
+	color: #413d4b;
+
+	position: relative;
+	margin-right: 20px;
+
+	transition: color .15s linear;
+}
+.s-works-link::after {
+	content: '';
+	position: absolute;
+	right: -12px;
+	top: 50%;
+	width: 10px;
+	height: 10px;
+
+	border: 1px solid;
+	border-color: #413d4b #413d4b transparent transparent;
+	opacity: .7;
+
+	transform: rotate(45deg) translateY(-50%);
+	transition: border .15s linear;
+}
+.s-works-link:hover,
+.s-works-link:hover::after {
+	color: #18bfc1;
+	border-color: #18bfc1 #18bfc1 transparent transparent;
+}
+
+/*——————— works-items ———————*/
+.works-items {
+	margin: 63px 0 67px;
+}
+.works-item {
+	padding: 0;
+	background: rgb(47, 42, 79);
+}
+.works-item img {
+	opacity: .6;
+	transition: opacity .15s linear;
+}
+.works-item:hover img {
+	opacity: 1;
+}
+
+/***** ——————————————————————————————————————————————————————————————————————
 Section: 
 —————————————————————————————————————————————————————————————————————— *****/
 
@@ -494,6 +555,8 @@ Section:
 /***** ——————————————————————————————————————————————————————————————————————
 Section: 
 —————————————————————————————————————————————————————————————————————— *****/
+
+
 
 
 /*———————  ———————*/
