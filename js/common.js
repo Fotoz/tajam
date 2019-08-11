@@ -81,4 +81,15 @@ $(function() {
 	  iframe.attr('src', src);
 	};
 
+
+// owl-carousel for section: reviews
+	$('.reviews-carousel').owlCarousel({
+		items: 1,
+		smartSpeed: 700,
+		loop: true,
+		nav: true,
+		navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
+		autoHeight: true
+	});
+
 });

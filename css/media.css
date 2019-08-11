@@ -104,6 +104,33 @@ Responsive Media Queries
 		letter-spacing: .5px;
 	}
 
+	/*——————— Section: Reviews ———————*/
+	.reviews-carousel.owl-theme .owl-dots {
+		height: 60px;
+	}
+	.reviews-carousel.owl-theme .owl-dots .owl-dot span {
+		width: 60px;
+		height: 60px;
+	}
+	.reviews-carousel.owl-theme .owl-dots .owl-dot:first-child span {
+		background-position: -5px 0;
+	}
+	.reviews-carousel.owl-theme .owl-dots .owl-dot:nth-child(2) span {
+		background-position: -72px 0;
+	}
+	.reviews-carousel.owl-theme .owl-dots .owl-dot:nth-child(3) span {
+		background-position: -145px 0;
+	}
+	.reviews-carousel.owl-theme .owl-dots .owl-dot:nth-child(4) span {
+		background-position: -215px;
+	}
+	.reviews-carousel.owl-theme .owl-dots .owl-dot:last-child span {
+		background-position: -285px;
+	}
+	.reviews-carousel.owl-theme .owl-nav {
+		display: none;
+	}
+
 }
 
 @media (max-width: 320px) {
