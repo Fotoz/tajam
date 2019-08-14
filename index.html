@@ -15,20 +15,25 @@
 		<link rel="stylesheet" href="libs/css-hamburgers/hamburgers.min.css">
 		<link rel="stylesheet" href="libs/owl-carousel/owl.carousel.min.css">
 		<link rel="stylesheet" href="libs/owl-carousel/owl.theme.default.min.css">
-		<link rel="stylesheet" href="libs/fontawesome/css/all.min.css">
-		<link rel="stylesheet" href="css/main.css">
-		<link rel="stylesheet" href="css/media.css">
+		<link rel="stylesheet" href="libs/wow/animate.min.css">
+		<link rel="stylesheet" href="libs/fontawesome/all.min.css">
+		<link rel="stylesheet" href="css/all.min.css">
 
 		<script src="libs/prefixfree/prefixfree.min.js"></script>
 	</head>
 
 	<body>
+		<!-- Preloader -->
+			<div class="preloader">
+				<div class="circle"><img src="images/preloader/circle.svg" alt="preloader"></div>
+			</div>
+
 		<!-- Section: Header -->
 			<header class="header" id="header">
 				<div class="container">
 					<div class="row  no-gutters  justify-content-between  align-items-center">
-						<!-- header logo -->
-						<div class="header-logo">
+						<!-- site logo -->
+						<div class="site-logo">
 							<img src="images/header/header-logo.png" alt="site-logo">
 							<span>tajam</span>
 						</div>
@@ -46,9 +51,9 @@
 
 						<!-- hamburger -->
 						<button class="hamburger  hamburger--elastic" id="hamburger" type="button">
-						  <span class="hamburger-box">
-						    <span class="hamburger-inner"></span>
-						  </span>
+							<span class="hamburger-box">
+								<span class="hamburger-inner"></span>
+							</span>
 						</button>
 					</div> <!-- /.row -->
 				</div> <!-- /.container -->
@@ -78,7 +83,7 @@
 				</div>
 
 				<!-- intro carousel -->
-				<div class="owl-carousel  owl-theme  intro-carousel">
+				<div class="owl-carousel  owl-theme  intro-carousel  wow  zoomIn  slow">
 					<div class="intro-slide">
 						<h1 class="intro-title">we are awesome creative agency</h1>
 
@@ -116,7 +121,7 @@
 
 		<!-- Section: About -->
 			<section class="s-about  s-padding" id="s_about">
-				<div class="container">
+				<div class="container  wow  zoomIn  slow">
 					<div class="row  align-items-center">
 						<!-- about logo -->
 						<div class="col-lg-3  offset-lg-1  col-md-4  d-none  d-md-block">
@@ -138,9 +143,9 @@
 		<!-- End Section: About -->
 
 		<!-- Section: v-Story -->
-			<div class="v-story" id="v_story">
+			<div class="v-story  wow  zoomIn  slow" id="v_story">
 				<!-- iframe video -->
-				<iframe class="iframe" id="iframe" src="" frameborder="0" allowfullscreen data-src="https://www.youtube.com/embed/TRI7tBTQDQ8?autoplay=1&modestbranding=1&rel=0&hl=ru&showinfo=0"></iframe>
+				<iframe class="iframe" id="iframe" src="" allowfullscreen data-src="https://www.youtube.com/embed/TRI7tBTQDQ8?autoplay=1&modestbranding=1&rel=0&hl=ru&showinfo=0"></iframe>
 
 				<!-- iframe poster -->
 				<div class="iframe-poster" id="iframe_poster">
@@ -152,7 +157,7 @@
 
 		<!-- Section: Expertise -->
 			<section class="s-expertise  s-padding" id="s_expertise">
-				<div class="container">
+				<div class="container  wow  zoomIn  slow">
 					<!-- section titles -->
 					<h2 class="s-title">expertise</h2>
 					<p class="s-subtitle">Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
@@ -214,13 +219,13 @@
 					</video>
 				</div>
 
-				<div class="container">
+				<div class="container  wow  zoomIn  slow">
 					<!-- section titles -->
 					<h2 class="s-title">meet our amazing team</h2>
 					<p class="s-subtitle">Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
 
+					<!-- team items -->
 					<div class="row">
-						<!-- team items -->
 						<div class="team-items  d-flex  flex-wrap">
 							<div class="team-item  col-lg-3  col-sm-6">
 								<img class="img-fluid" src="images/team/teammate-1.jpg" alt="teammate">
@@ -267,7 +272,7 @@
 		<!-- End Section: Team -->
 
 		<!-- Section: Works -->
-			<section class="s-works  s-padding" id="s_works">
+			<section class="s-works  s-padding  wow  zoomIn  slow" id="s_works">
 				<div class="container">
 					<div class="row  no-gutters  justify-content-between  align-items-center">
 						<h2 class="s-title">our works</h2>
@@ -340,11 +345,11 @@
 				</div>
 
 				<!-- reviews carousel -->
-				<div class="owl-carousel  owl-theme  reviews-carousel">
+				<div class="owl-carousel  owl-theme  reviews-carousel  wow  zoomIn  slow">
 					<div class="reviews-slide">
 						<div class="reviews-quotes">‘‘</div>
 
-						<p class="reviews-text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
+						<p class="reviews-text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.</p>
 
 						<h3 class="reviews-name">Jane Galadriel</h3>
 						<p class="reviews-post">web designer</p>
@@ -353,7 +358,7 @@
 					<div class="reviews-slide">
 						<div class="reviews-quotes">‘‘</div>
 
-						<p class="reviews-text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
+						<p class="reviews-text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.</p>
 
 						<h3 class="reviews-name">Richard Hendrix</h3>
 						<p class="reviews-post">programmer</p>
@@ -362,7 +367,7 @@
 					<div class="reviews-slide">
 						<div class="reviews-quotes">‘‘</div>
 
-						<p class="reviews-text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
+						<p class="reviews-text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.</p>
 
 						<h3 class="reviews-name">Jane Forest</h3>
 						<p class="reviews-post">photographer</p>
@@ -371,7 +376,7 @@
 					<div class="reviews-slide">
 						<div class="reviews-quotes">‘‘</div>
 
-						<p class="reviews-text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
+						<p class="reviews-text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.</p>
 
 						<h3 class="reviews-name">Victoria Felton</h3>
 						<p class="reviews-post">painter</p>
@@ -380,7 +385,7 @@
 					<div class="reviews-slide">
 						<div class="reviews-quotes">‘‘</div>
 
-						<p class="reviews-text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
+						<p class="reviews-text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.</p>
 
 						<h3 class="reviews-name">Erlich Bachman</h3>
 						<p class="reviews-post">web developer</p>
@@ -391,7 +396,7 @@
 
 		<!-- Section: Contact -->
 			<section class="s-contact  s-padding" id="s_contact">
-				<div class="container">
+				<div class="container  wow  zoomIn  slow">
 					<div class="row">
 						<!-- contact form -->
 						<div class="col-lg-6">
@@ -432,10 +437,83 @@
 			</section>
 		<!-- End Section: Contact -->
 
+		<!-- Section: Footer -->
+			<footer class="footer  s-padding">
+				<!-- video background -->
+				<div class="video-bg">
+					<video class="video" autoplay muted loop>
+						<source src="videos/v_footer-bg.mp4" type="video/mp4">
+					</video>
+				</div>
+
+				<div class="container  wow  zoomIn  slow">
+					<div class="row">
+						<!-- footer items -->
+						<div class="footer-items  d-flex  flex-wrap">
+							<div class="footer-item col-lg-4">
+								<!-- site logo -->
+								<div class="site-logo">
+									<img src="images/header/header-logo.png" alt="site-logo">
+									<span>tajam</span>
+								</div>
+
+								<p class="footer-text">Lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh elit. Duis sed odio sit amet auctror a ornare odio non mauris vitae erat in elit</p>
+							</div>
+
+							<div class="footer-item col-lg-4">
+								<h3 class="footer-title">our studio</h3>
+
+								<!-- address information -->
+								<address class="footer-address">
+									<p>Ruko cucruk, Jl. Radio luar dalem jos
+									No.12 - 13, Kalideres - Jakarta Barat
+									11480 - Indonesia</p>
+
+									<a href="tel:=+622122243333">(+62) 21 2224 3333</a>
+								</address>
+							</div>
+
+							<div class="footer-item col-lg-4">
+								<h3 class="footer-title">stay in touch</h3>
+
+								<!-- subscribe form -->
+								<form class="footer-form" name="footer-form" action="#" method="post">
+									<input type="email" name="email" placeholder="Subscribe our newsletter" required autocomplete="off">
+									<button type="submit"><i class="far fa-paper-plane"></i></button>
+								</form>
+
+								<!-- social links -->
+								<div class="social-links">
+									<a href="#"><i class="fab fa-facebook-f"></i></a>
+									<a href="#"><i class="fab fa-twitter"></i></a>
+									<a href="#"><i class="fab fa-dribbble"></i></a>
+									<a href="#"><i class="fab fa-instagram"></i></a>
+									<a href="#"><i class="fab fa-google-plus-g"></i></a>
+									<a href="#"><i class="fab fa-youtube"></i></a>
+								</div>
+							</div>
+						</div> <!-- /.footer-items -->
+					</div> <!-- /.row -->
+
+					<div class="footer-links  row  no-gutters  justify-content-between">
+						<!-- helpful links -->
+						<div class="helpful-links">
+							<a href="#">help</a>
+							<a href="#">terms & condition</a>
+							<a href="#">privacy</a>
+						</div>
+
+						<div class="copyright">Copyright &#169; 2019 - Tajam Creative</div>
+					</div>
+				</div><!-- /.container -->
+			</footer>
+		<!-- End Section: Footer -->
+
 		<!-- JS Locals -->
 			<script src="libs/jquery/jquery-3.4.1.min.js"></script>
 			<script src="libs/owl-carousel/owl.carousel.min.js"></script>
-			<script src="js/common.js"></script>
+			<script src="libs/wow/wow.min.js"></script>
+			<script src="js/common.min.js"></script>
 	</body>
 
 </html>

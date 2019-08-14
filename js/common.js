@@ -1,5 +1,11 @@
 $(function() {
 
+// wow-js
+	wow = new WOW({
+		offset: 200
+	});
+	wow.init();
+
 // smooth-scroll
 	$('[data-scroll]').on('click', function(event) {
 		event.preventDefault();
@@ -67,18 +73,18 @@ $(function() {
 
 // iframe for section: v-Story
 	$('#iframe_poster').on('click', function() {
-	  var poster = $(this),
-	  		wrapper = poster.closest('#v_story');
+		var poster = $(this),
+				wrapper = poster.closest('#v_story');
 
-	  videoPlay(wrapper);
+		videoPlay(wrapper);
 	});
 
 	function videoPlay(wrapper) {
-	  var iframe = wrapper.find('#iframe'),
-	  		src = iframe.data('src');
+		var iframe = wrapper.find('#iframe'),
+				src = iframe.data('src');
 
-	  wrapper.addClass('hide-poster');
-	  iframe.attr('src', src);
+		wrapper.addClass('hide-poster');
+		iframe.attr('src', src);
 	};
 
 
@@ -90,6 +96,12 @@ $(function() {
 		nav: true,
 		navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
 		autoHeight: true
+	});
+
+
+// preloader
+	$(window).on('load', function() {
+		$('.preloader').delay(500).fadeOut('slow');
 	});
 
 });
