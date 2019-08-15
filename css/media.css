@@ -5,7 +5,7 @@ Responsive Media Queries
 @media (max-width: 991px) {
 
 	/*——————— changing video fons ———————*/
-	.video-bg {
+/*	.video-bg {
 		display: none;
 	}
 	.intro {
@@ -38,7 +38,7 @@ Responsive Media Queries
 		height: 100%;
 
 		background: linear-gradient(0deg, rgba(47, 42, 79, .7), rgba(80, 63, 118, .7));
-	}
+	}*/
 
 	/*——————— Section: Header ———————*/
 	.desktop-nav {
