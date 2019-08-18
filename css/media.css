@@ -26,7 +26,7 @@ Responsive Media Queries
 	}
 	.intro::after,
 	.s-team::after,
-	.reviews,
+	.reviews::after,
 	.footer::after {
 		content: '';
 		position: absolute;
