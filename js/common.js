@@ -1,11 +1,5 @@
 $(function() {
 
-// wow-js
-	wow = new WOW({
-		offset: 200
-	});
-	wow.init();
-
 // smooth-scroll
 	$('[data-scroll]').on('click', function(event) {
 		event.preventDefault();
@@ -52,6 +46,13 @@ $(function() {
 
 		$(this).toggleClass('is-active');
 		$('#mobile_nav').fadeToggle();
+		$('body').toggleClass('overflow-hidden');
+
+	// resetting scroll for menu
+		$('.mobile-nav-inner').delay(400).queue(function(reset_scroll) {
+			$(this).scrollTop(0);
+			reset_scroll();
+		});
 	});
 
 
@@ -59,8 +60,21 @@ $(function() {
 	$('#mobile_nav a').on('click', function(event) {
 		event.preventDefault();
 
-		$('#mobile_nav').fadeToggle();
 		$('#hamburger').removeClass('is-active');
+		$('#mobile_nav').fadeToggle();
+		$('body').removeClass('overflow-hidden');
+	});
+
+
+// removing classes for menu if window resize
+	$(window).on('resize', function() {
+		var width = $(document).width();
+
+		if ( width > 991 ) {
+			$('body').removeClass('overflow-hidden');
+			$('#hamburger').removeClass('is-active');
+			$('#mobile_nav').attr('style', 'display: none');
+		}
 	});
 
 
@@ -99,9 +113,23 @@ $(function() {
 	});
 
 
-// preloader
-	$(window).on('load', function() {
-		$('.preloader').delay(500).fadeOut('slow');
+// wow-js
+	wow = new WOW({
+		offset: 200
+	});
+	wow.init();
+
+
+// downloading video fons
+	$(document).ready(function() {
+		var width = $(document).width();
+
+		if ( width > 991 ) {
+			$('.v-intro').append('<source src="videos/v_intro-bg.mp4" type="video/mp4">');
+			$('.v-team').append('<source src="videos/v_team-bg.mp4" type="video/mp4">');
+			$('.v-reviews').append('<source src="videos/v_reviews-bg.mp4" type="video/mp4">');
+			$('.v-footer').append('<source src="videos/v_footer-bg.mp4" type="video/mp4">');
+		}
 	});
 
 });

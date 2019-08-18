@@ -4,41 +4,11 @@ Responsive Media Queries
 
 @media (max-width: 991px) {
 
-	/*——————— changing video fons ———————*/
-/*	.video-bg {
-		display: none;
+	/*——————— Basic Settings ———————*/
+	input,
+	textarea {
+		font-size: 16px;
 	}
-	.intro {
-		background: url(..//images/intro/intro-bg.jpg) no-repeat center / cover;
-		z-index: 10;
-	}
-	.s-team {
-		background: url(../images/team/team-bg.jpg) no-repeat center / cover;
-		z-index: 10;
-	}
-	.reviews {
-		background: url(../images/reviews/reviews-bg.jpg) no-repeat center / cover;
-		z-index: 10;
-	}
-	.footer {
-		background: url(../images/footer/footer-bg.jpg) no-repeat center / cover;
-		z-index: 10;
-	}
-	.intro::after,
-	.s-team::after,
-	.reviews::after,
-	.footer::after {
-		content: '';
-		position: absolute;
-		top: 0;
-		left: 0;
-		z-index: -10;
-
-		width: 100%;
-		height: 100%;
-
-		background: linear-gradient(0deg, rgba(47, 42, 79, .7), rgba(80, 63, 118, .7));
-	}*/
 
 	/*——————— Section: Header ———————*/
 	.desktop-nav {
@@ -46,6 +16,17 @@ Responsive Media Queries
 	}
 	.hamburger {
 		display: block;
+	}
+
+	@media (max-height: 480px) {
+
+		.mobile-nav {
+			padding: 95px 0 30px;
+		}
+		.mobile-nav-inner {
+			justify-content: flex-start;
+		}
+
 	}
 
 	/*——————— Section: Expertise ———————*/
@@ -92,6 +73,13 @@ Responsive Media Queries
 	}
 	.footer-title {
 		margin-bottom: 25px;
+	}
+	.footer-form input {
+		width: 75%;
+	}
+	.footer-form button {
+		width: 22%;
+		height: 48px;
 	}
 
 }
