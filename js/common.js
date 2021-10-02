@@ -87,18 +87,17 @@ $(function() {
 
 // iframe for section: v-Story
 	$('#iframe_poster').on('click', function() {
-		var poster = $(this),
-				wrapper = poster.closest('#v_story');
+		var poster  = $(this),
+				wrapper = poster.closest('#iframe_poster');
 
 		videoPlay(wrapper);
 	});
 
 	function videoPlay(wrapper) {
-		var iframe = wrapper.find('#iframe'),
-				src = iframe.data('src');
+		var iframe = wrapper.find('#iframe');
 
-		wrapper.addClass('hide-poster');
-		iframe.attr('src', src);
+		wrapper.fadeToggle(2000);
+		$('#iframe')[0].src += '?autoplay=1';
 	};
 
 

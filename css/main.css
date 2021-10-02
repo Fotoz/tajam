@@ -378,12 +378,6 @@ Section: v-Story
 	color: #00e0d0;
 	cursor: pointer;
 }
-.v-story.hide-poster .iframe-poster {
-	height: 0;
-	opacity: 0;
-
-	color: #00e0d0;
-}
 .iframe-btn {
 	width: 100px;
 	height: 100px;
@@ -398,8 +392,7 @@ Section: v-Story
 	background: none;
 	transition: all .2s linear;
 }
-.iframe-poster:hover .iframe-btn,
-.v-story.hide-poster .iframe-btn {
+.iframe-poster:hover .iframe-btn {
 	color: #00e0d0;
 	border-color: #00e0d0;
 }
